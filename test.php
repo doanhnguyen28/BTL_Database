@@ -1,11 +1,6 @@
 <?php
 include 'module/connect.php';
 ?>
-<?php 
-include 'module/';
-$connect = mysqli_query();
-
-?>
 
 <?php
 

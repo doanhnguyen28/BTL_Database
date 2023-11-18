@@ -299,7 +299,7 @@ if (($_GET['rl'] == "info") && isset($_SESSION['customer'])) { ?>
                                     </div>
                                 <?php } else { ?>
                                     <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-6 col-sm-12 col-xs-12">
-                                        <img class="img-responsive" src="admin/public/image/1234.png" alt="">
+                                        <img class="img-responsive" src="admin/public/image/" alt="">
                                     </div>
                                 <?php } ?>
                             </div>

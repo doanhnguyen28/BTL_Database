@@ -27,17 +27,17 @@
         						<li>
         							<i class="fa fa-map-marker"></i>
         							<span>Địa chỉ: </span>
-        							238 Hoàng Quốc Việt, Cầu Giấy, Hà Nội 							
+        							144 Xuân Thủy, Cầu Giấy, Hà Nội 							
         						</li>
         						<li>
         							<i class="fa fa-envelope"></i>
         							<span>Email: </span>
-        							<a href="#">info@bootexperts.com</a>
+        							<a href="#">abc@gmail.com</a>
         						</li>
         						<li>
         							<i class="fa fa-mobile"></i>
         							<span>Phone: </span>
-        							(800) 0123 4567 890
+        							0999999999
         						</li>
         					</ul>
         				</div>
