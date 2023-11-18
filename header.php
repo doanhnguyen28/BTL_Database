@@ -146,7 +146,7 @@ $payment =  execute("SELECT * FROM  image WHERE type = 3 and status = 0 ORDER BY
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                         <div class="logo-area">
-                            <a href="index.php"><img src="public/img/logo/2.png" alt="logo" /></a>
+                            <a href="index.php"><img src="public/img/logo/logo_bookstore.png" alt="logo" class="custom-logo"/></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">

@@ -340,6 +340,12 @@ body {
 /*  2.1 Header top area
 /*----------------------------------------*/
 
+.custom-logo {
+    width: 180px;
+    height: auto;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
 .header-top-area {
     background: #E3E3E3;
 }
