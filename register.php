@@ -186,24 +186,6 @@ if (isset($_GET['check'])) {
 						</form>
 					</div>
 				</div>
-			<?php } else if ($Check == "check") { ?>
-				<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
-					<div class="login-form text-center">
-						<p>Một mã xác nhận đã được gửi đến Email của bạn!</p>
-						<p>Vui lòng truy cập <a href="https://mail.google.com"><?php echo isset($_SESSION['cus_registe']['email']) ? $_SESSION['cus_registe']['email'] : "" ?></a> để nhận mã xác nhận</p>
-						<form action="xuli-account.php" id="form-checkcode">
-							<div class="text-center" style="padding-bottom: 15px; font-size: 20px;">
-								<p class="text-success">Nhập mã xác nhận</p>
-								<input type="hidden" name="action" value="register">
-								<input type="text" name="code_very">
-								<label style="padding-top: 5px"><span class="required text-danger"><?php echo isset($_SESSION['error']['code_uncorect']) ? $_SESSION['error']['code_uncorect'] : '' ?></span></label>
-							</div>
-							<div class="single-login single-login-2">
-							<a style="background: #f07c29;" href="javascript:{}" onclick="document.getElementById('form-checkcode').submit();">Xác nhận</button></a>
-							</div>
-						</form>
-					</div>
-				</div>
 			<?php } else { ?>
 				<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-12 col-xs-12">
 					<div class="login-form">

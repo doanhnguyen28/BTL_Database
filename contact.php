@@ -85,7 +85,7 @@
         			<p>Xem bản đồ chỉ dẫn địa chỉ của chúng tôi:</p>
         			<div class="col-lg-12">
         				<div id="map" class="text-center">
-        					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1861.802784666508!2d105.7847702173869!3d21.0484625030571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3277f870d7%3A0xf27837785a779a8a!2zMjM2IEhvw6BuZyBRdeG7kWMgVmnhu4d0LCBD4buVIE5odeG6vywgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1548214028872" width="97%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        					<iframe <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8612163515886!2d105.78010407540832!3d21.03823838061345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab354920c233%3A0x5d0313a3bfdc4f37!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4csIMSQ4bqhaSBo4buNYyBRdeG7kWMgZ2lhIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1700317075078!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe width="97%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         				</div>
         			</div>
         		</div>

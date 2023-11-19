@@ -17,7 +17,7 @@ $payment =  execute("SELECT * FROM  image WHERE type = 3 and status = 0 ORDER BY
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Book Shop</title>
+    <title>Book Store</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -68,8 +68,6 @@ $payment =  execute("SELECT * FROM  image WHERE type = 3 and status = 0 ORDER BY
                                     <div class="header-sub">
                                         <ul>
                                             <li><a href="#"><img src="public/img/flag/1.jpg" alt="flag" />english</a></li>
-                                            <li><a href="#"><img src="public/img/flag/2.jpg" alt="flag" />france</a></li>
-                                            <li><a href="#"><img src="public/img/flag/3.jpg" alt="flag" />croatia</a></li>
                                         </ul>
                                     </div>
                                 </li>

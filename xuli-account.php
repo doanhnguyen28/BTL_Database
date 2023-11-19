@@ -45,7 +45,7 @@ if (isset($_GET['action']) == 'register') {
             $sex = $_SESSION['cus_registe']['sex'];
             $birthday = $_SESSION['cus_registe']['birthday'];
 
-            $result = execute("INSERT INTO account ( name, email, phone, password, address, sex, birthday, type)
+            $result = execute("INSERT INTO account (name, email, phone, password, address, sex, birthday, type)
                                 VALUES ( '$name', '$email', '$phone', '$pass', '$address', $sex, '$birthday', '0')");
             if ($result == 1) {
                 unset($_SESSION['cus_registe']);

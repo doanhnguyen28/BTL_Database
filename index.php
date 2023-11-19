@@ -14,10 +14,8 @@
 					<div class="slider-area">
 						<div class="slider-active owl-carousel">
 							<?php foreach ($slider as $key => $value) { ?>
-								<div class="single-slider slider-hm4-1 pt-154 pb-154 bg-img" style="background-image:url(admin/public/image/slider/slider.jpg);">
+								<div class="single-slider slider-hm4-1 pt-154 pb-154 bg-img" style="background-image:url(admin/public/image/slider/slider.jpg">
 									<div class="slider-content-4 slider-animated-1 pl-40">
-										<h1><?php echo $value['title'] ?></h1>
-										<h2><?php echo $value['content'] ?></h2>
 										<a href="category.php">Shopping now!</a>
 									</div>
 								</div>
