@@ -13,13 +13,13 @@
 					<!-- slider-area-start -->
 					<div class="slider-area">
 						<div class="slider-active owl-carousel">
-							<?php foreach ($slider as $key => $value) { ?>
+							<?php  ?>
 								<div class="single-slider slider-hm4-1 pt-154 pb-154 bg-img" style="background-image:url(admin/public/image/slider/slider.jpg">
 									<div class="slider-content-4 slider-animated-1 pl-40">
 										<a href="category.php">Shopping now!</a>
 									</div>
 								</div>
-							<?php } ?>
+							<?php  ?>
 						</div>
 					</div>
 					<!-- slider-area-end -->
@@ -27,20 +27,11 @@
 				<div class="col-lg-3 col-md-3 hidden-sm col-xs-12">
 					<!-- banner-static-2-start -->
 					<div class="banner-static-2">
-						<div class="banner-img-2">
-							<a href="#"><img src="admin/public/image/icon-img/<?php echo $payment[0]['img_link'] ?>" alt="banner" /></a>
-							<?php unset($payment[0]); ?>
-						</div>
+						
 						<!-- banner-area-3-start -->
 						<div class="banner-area-3">
 							<?php foreach ($payment as $key => $value) { ?>
-								<div class="single-banner-2 mt-16">
-									<div class="single-icon-2">
-										<a href="#">
-											<img class="service-blue-img" src="admin/public/image/icon-img/<?php echo $value['img_link']; ?>" alt="banner" />
-											<img class="service-white-img" src="admin/public/image/icon-img/white-<?php echo $value['img_link']; ?>" alt="banner" />
-										</a>
-									</div>
+								
 									<div class="single-text-2">
 										<h2><?php echo $value['title'] ?></h2>
 										<p><?php echo $value['content'] ?></p>
@@ -72,15 +63,13 @@
 					<!-- most-product-area-start -->
 					<div class="most-product-area mb-30">
 						<div class="section-title-2 mb-30">
-							<h3>Sản phẩm thịnh hành </h3>
+							<h3>Sản phẩm bán chạy </h3>
 						</div>
 						<div class="product-active-2 owl-carousel">
 							<?php
-							$limit = 3;
-							for ($i = 0; $i < $limit; $i++) {
-
-								$start =  $i * $limit;
-								$trending_pro = execute("SELECT * FROM product ORDER BY view DESC LIMIT $start,$limit")->fetch_all(MYSQLI_ASSOC);
+							$limit = 3;						
+								
+								$trending_pro = execute("SELECT * FROM product p INNER JOIN orders_detail o on p.id = o.prod_id ORDER BY o.quantity limit 5")->fetch_all(MYSQLI_ASSOC);
 								?>
 								<div class="product-total-2">
 									<?php foreach ($trending_pro as $value) { ?>
@@ -104,7 +93,7 @@
 										</div>
 									<?php } ?>
 								</div>
-							<?php } ?>
+							<?php  ?>
 						</div>
 					</div>
 					<!-- most-product-area-end -->
@@ -270,17 +259,17 @@
 								$max = (end($cate_id))['id'];
 								$cate_id = loc($min, $max);
 
-								$random1 = show_pro($cate_id);
-								$cate_id1 = array_diff($cate_id, array($random1));
+								// $random1 = show_pro($cate_id);
+								// $cate_id1 = array_diff($cate_id, array($random1));
 
-								$random2 = show_pro($cate_id1);
-								$cate_id2 = array_diff($cate_id1, array($random2));
+								// $random2 = show_pro($cate_id1);
+								// $cate_id2 = array_diff($cate_id1, array($random2));
 
-								$random3 = show_pro($cate_id2);
+								// $random3 = show_pro($cate_id2);
 								?>
-								<div class="section-title-2 mb-30">
+								<!-- <div class="section-title-2 mb-30">
 									<h4><?php echo execute("SELECT name FROM category WHERE id = $random1")->fetch_all(MYSQLI_ASSOC)[0]['name']; ?></h4>
-								</div>
+								</div> -->
 								<div class="product-active-3 owl-carousel">
 									<?php
 									$limit = 3;

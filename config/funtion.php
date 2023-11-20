@@ -62,18 +62,17 @@ function loc($min, $max)
     return $contant;
 }
 // Hàm lấy sản phẩm ngẫu nhiên > 3
-function show_pro($random)
-{
-
-    $random_loc = array_rand($random, 1);
-    $random_pro1 = execute("SELECT p.id FROM product p,category c WHERE p.cate_id = c.id and c.id = $random_loc")->fetch_all(MYSQLI_ASSOC);
-    $dem = count($random_pro1);
-    if ($dem < 3) {
-        return show_pro($random);
-    } else {
-        return $random_loc;
-    }
-}
+// function show_pro($random)
+// {
+//     $random_loc = array_rand($random, 1);
+//     $random_pro1 = execute("SELECT p.id FROM product p,category c WHERE p.cate_id = c.id and c.id = $random_loc")->fetch_all(MYSQLI_ASSOC);
+//     $dem = count($random_pro1);
+//     if ($dem < 3) {
+//         return show_pro($random);
+//     } else {
+//         return $random_loc;
+//     }
+// }
 
 // Hàm gủi mail
 function send_mail($cus_email, $message, $title)

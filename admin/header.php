@@ -4,6 +4,7 @@ include '../config/connect.php';
 include '../config/funtion.php';
 include("../config/resize-class.php");
 
+
 if (!isset($_SESSION['admin'])) {
     header('location: login.php');
 }
@@ -25,7 +26,7 @@ if (!isset($_SESSION['admin'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Manage Book Store</title>
 
     <!-- Custom fonts for this template-->
     <link href="public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -50,7 +51,7 @@ if (!isset($_SESSION['admin'])) {
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3"> Book Store</sup></div>
             </a>
 
             <!-- Divider -->
@@ -60,7 +61,7 @@ if (!isset($_SESSION['admin'])) {
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Manage</span></a>
             </li>
 
             <!-- Divider -->

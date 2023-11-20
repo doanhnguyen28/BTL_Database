@@ -35,10 +35,6 @@ $category = execute("SELECT * FROM category");
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-	<!-- Page Heading -->
-	<p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the 
-		<a target="_blank" href="https://datatables.net/">official DataTables documentation</a>.
-	</p>
 
 	<!-- DataTales Example -->
 	<div class="card shadow mb-4">
@@ -116,9 +112,7 @@ $category = execute("SELECT * FROM category");
 						<div class="col-sm-12 col-md-7">
 							<div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
 								<ul class="pagination">
-									<li class="paginate_button page-item previous <?php if($_GET['page'] <= 1)echo 'disabled' ?>" id="dataTable_previous">
-										<a href="nxb.php?name=nxb&page=<?php echo $_GET['page'] - 1?>&search_value=<?php echo $search?>" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
-									</li>
+									
 									<?php	for ($i = 1; $i < $sotrang + 1; $i++) { ?>
 											<li class="paginate_button page-item <?php if($trang == $i)echo 'active'; ?>">
 												<a href="nxb.php?name=nxb&page=<?php echo $i?>&sotinmottrang=<?php echo $sotinmottrang;?>&search_value=<?php echo $search?>" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link"><?php echo $i; ?></a>
@@ -126,9 +120,7 @@ $category = execute("SELECT * FROM category");
 											
 										
 									<?php } ?>
-									<li class="paginate_button page-item next <?php if($_GET['page'] == $sotrang)echo 'disabled' ?>" id="dataTable_next">
-										<a href="nxb.php?name=nxb&page=<?php echo $_GET['page'] + 1;?>&sotinmottrang=<?php echo $sotinmottrang;?>&search_value=<?php echo $search?>" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a>
-									</li>
+									
 								</ul>
 							</div>
 						</div>
