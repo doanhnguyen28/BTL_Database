@@ -69,7 +69,7 @@
 							<?php
 							$limit = 3;						
 								
-								$trending_pro = execute("SELECT * FROM product p INNER JOIN orders_detail o on p.id = o.prod_id ORDER BY o.quantity limit 5")->fetch_all(MYSQLI_ASSOC);
+								$trending_pro = execute("SELECT * FROM product p INNER JOIN orders_detail o on p.id = o.prod_id ORDER BY o.quantity limit 3")->fetch_all(MYSQLI_ASSOC);
 								?>
 								<div class="product-total-2">
 									<?php foreach ($trending_pro as $value) { ?>
