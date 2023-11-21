@@ -22,7 +22,7 @@ $payment =  execute("SELECT * FROM  image WHERE type = 3 and status = 0 ORDER BY
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="public/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="public/img/new_favicon.png">
 
     <!-- all css here -->
     <!-- bootstrap v3.3.6 css -->
