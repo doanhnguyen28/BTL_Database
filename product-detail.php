@@ -240,10 +240,7 @@ if (isset($_GET['id'])) {
 						</div>
 					</div>
 					<div class="banner-area mb-30">
-						<div class="banner-img-2">
-							<a href="#"><img src="admin/public/image/banner/<?php echo $banner[5]['img_link'] ?>" alt="banner" /></a>
-							<?php unset($banner[5]); ?>
-						</div>
+						
 					</div>
 				</div>
 			</div>

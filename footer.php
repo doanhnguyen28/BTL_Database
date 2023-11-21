@@ -81,10 +81,10 @@
 						<div class="footer-contact">
 							<p class="adress">
 								<span>My Company</span>
-								42 avenue des Champs Elysées 75000 Paris France
+								144 Xuân Thủy, Cầu Giấy, Hà Nội 
 							</p>
-							<p><span>Call us now:</span> (+1)866-540-3229</p>
-							<p><span>Email:</span> support@hastech.com</p>
+							<p><span>Call us now:</span> 0999999999</p>
+							<p><span>Email:</span> abc@vnu.edu.vn</p>
 						</div>
 					</div>
 				</div>
@@ -98,7 +98,7 @@
 			<div class="row bt-2">
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 					<div class="copy-right-area">
-						<p>Copyright ©<a href="#">Koparion</a>. All Right Reserved.</p>
+						<p>Copyright ©<a href="#">Book Store</a>. All Right Reserved.</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">

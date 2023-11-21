@@ -112,12 +112,16 @@
 								$start =  $i * $limit;
 								$new_pro = execute("SELECT * FROM product WHERE status = 2 ORDER BY id DESC LIMIT $start,$limit");
 								?>
-								<div class="tab-total">
+								<div class="tab-total" >
 									<!-- single-product-start -->
 									<?php foreach ($new_pro as $key => $value) {
 										$sale = ceil(100 - $value['sale_price'] / $value['price'] * 100);
 										?>
-										<div class="col-lg-12 col-md-8 col-sm-8 col-xs-6">
+										<row>
+										
+										
+										
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" >
 											<div class="product-wrapper">
 												<div class="product-img mt-40">
 													<a href="product-detail.php?id=<?php echo $value['id']; ?>">
@@ -172,6 +176,9 @@
 												</div>
 											</div>
 										</div>
+										
+										
+										</row>
 										<!-- single-product-end -->
 									<?php } ?>
 								</div>
@@ -192,6 +199,7 @@
 								$sale = 100 - $value['sale_price'] / $value['price'] * 100;
 								?>
 								<!-- single-product-start -->
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" >
 								<div class="product-wrapper" id="list">
 									<div class="product-img">
 										<a href="product-detail.php?id=<?php echo $value['id']; ?>">
@@ -213,6 +221,7 @@
 												<li><span class="discount-percentage">-<?php echo $sale; ?>%</span></li>
 											</ul>
 										</div>
+									</div>
 									</div>
 									<div class="product-details text-center">
 										<div class="product-rating mt-20">

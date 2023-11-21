@@ -95,7 +95,7 @@ $payment =  execute("SELECT * FROM  image WHERE type = 3 and status = 0 ORDER BY
                                         </div>
                                     </li>
                                 <?php } else { ?>
-                                    <li><a href="#" data-target="#modal-login" data-toggle="modal">Đăng nhập</a></li>
+                                    <li><a href="login.php" data-target="#modal-login" data-toggle="modal">Đăng nhập</a></li>
                                     <li><a href="register.php">đăng kí</a></li>
                                 <?php } ?>
                             </ul>

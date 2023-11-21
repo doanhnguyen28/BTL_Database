@@ -39,16 +39,7 @@ if (isset($_GET['name'])) {
 			unlink('public/image/product/' . $product['anh_bia']);
 		}
 		move_uploaded_file($_FILES['anh_bia']['tmp_name'], 'public/image/product/' . $image);
-		if (file_exists('public/image/product/' . $image)) {
-			// *** 1) Initialize / load image
-			$resizeObj = new resize('public/image/product/' . $image);
-
-			// *** 2) Resize image (options: exact, portrait, landscape, auto, crop)
-			$resizeObj->resizeImage(350, 449, 'exact');
-
-			// *** 3) Save image
-			$resizeObj->saveImage('public/image/product/' . $image, 100);
-		}
+		
 	} else {
 		$image = $product['anh_bia'];
 	}

@@ -2,7 +2,7 @@
 ob_start();
 include '../config/connect.php';
 include '../config/funtion.php';
-include("../config/resize-class.php");
+
 
 
 if (!isset($_SESSION['admin'])) {

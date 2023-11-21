@@ -153,10 +153,7 @@ $product = pagination($sql, $from, $sotinmottrang);
 				</div>
 			</div>
 			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
-				<div class="category-image mb-30">
-					<a href="#"><img src="admin/public/image/banner/<?php echo $banner[4]['img_link'] ?>" alt="banner" /></a>
-					<?php unset($banner[4]); ?>
-				</div>
+				
 				<div class="section-title-5 mb-30">
 					<h2><?php if (isset($cate_id)) {
 							echo $product->fetch_assoc()['cate_name'];
@@ -339,9 +336,7 @@ $product = pagination($sql, $from, $sotinmottrang);
 
 					$sotrang = ceil(($product->num_rows) / $sotinmottrang);
 					?>
-					<div class="list-page-2">
-						<p>Hiển thị <?php echo $sotinmottrang ?> trong <?php echo $product->num_rows; ?> kết quả</p>
-					</div>
+					
 					<div class="page-number">
 						<ul>
 							<?php for ($i = 1; $i < $sotrang + 1; $i++) { ?>

@@ -1,4 +1,5 @@
 <?php include "header.php" ?>
+
 <?php
 // Lấy hành động
 
@@ -21,17 +22,7 @@ if (isset($_GET['name'])) {
 		$image = time() . '_' . $_FILES['anh_bia']['name'];
 		move_uploaded_file($_FILES['anh_bia']['tmp_name'], 'public/image/product/' . $image);
 
-		//Xử lý ảnh
-		if (file_exists('public/image/product/' . $image)) {
-			// *** 1) Initialize / load image
-			$resizeObj = new resize('public/image/product/' . $image);
-
-			// *** 2) Resize image (options: exact, portrait, landscape, auto, crop)
-			$resizeObj->resizeImage(350, 449, 'exact');
-
-			// *** 3) Save image
-			$resizeObj->saveImage('public/image/product/' . $image, 100);
-		}
+		
 	} else {
 		$image = '';
 	}
@@ -100,9 +91,7 @@ if (isset($_GET['name'])) {
 	<!-- Begin Page Content -->
 	<div class="container-fluid">
 		<!-- Page Heading -->
-		<p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-			<a target="_blank" href="https://datatables.net/">official DataTables documentation</a>.
-		</p>
+		
 
 		<!-- DataTales Example -->
 		<div class="card shadow mb-4">
