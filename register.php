@@ -84,12 +84,7 @@ if (isset($_GET['check'])) {
 						if ($result) {
 							$error['mk_name'] = "Email đã được đăng kí";
 						} else {
-							// Gửi mail
-							$very_code = time();
-							require "config/mail_login.php";
-							$title = "Đăng kí";
-							$mail = send_mail($email, $body, $title);
-							if ($mail == true) {
+							// Gửi mail							
 								$_SESSION['cus_registe'] = [
 									'name' => $name,
 									'phone' => $phone,
@@ -100,10 +95,10 @@ if (isset($_GET['check'])) {
 									'email' => $email,
 									'code' => $very_code,
 								];
+								execute("INSERT INTO account (name, email, phone, password, address, sex, birthday, type)
+                                			VALUES ( '$name', '$email', '$phone', '$pass', '$address', $sex, '$birthday', '0')");
 								header('location: register.php?check');
-							} else {
-								$error['mk_name'] = "Email này không đúng";
-							}
+							
 						}
 					}
 				}
